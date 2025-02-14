@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: rgb(7, 3, 3);
+    background-color: rgb(243, 239, 239);
+    font-family: 'Lato';
+}
+#head {
+    margin: 2vw 3vw;
+    padding: 1vw 8vw;
+    border-radius: 6px;
+    /* background-color: transparent; */
+}
+#head p{
+    font-style: italic;
+}
+.search-container {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 30px;
+    background-color: #f3f4f6;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-dropdown {
+    position: relative;
+    background-color: #f3f4f6;
+    align-self: center;  
+
+}
+
+.filter-dropdown select {
+    appearance: none;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem 0.5rem 0.75rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    position: absolute;
+    align-self: center ;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+.search-input {
+    flex-grow: 1;
+    background-color: #f3f4f6;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-button {
+    background-color: #f3f4f6;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #e5e7eb;
+}
+
+.search-button svg {
+    stroke: #666;
+}
+#header {
+    background-image: url('https://plus.unsplash.com/premium_photo-1734291398031-a466877e7809?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG51dHJpdGlvbiUyMHdhbGxwYXBlciUyMGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+    padding: 50px 10px; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header > h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+}
+
+#header > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    background-color: transparent;
+
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 60px;   
+    border-radius: 70px;
+
+}
+
+.card > div {
+    box-shadow: 0 15px 20px 0 rgba(1, 12, 5, 0.5);
+}
+
+.card-image {
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 10px;
+    overflow: none;
+}
+
+.card-text {
+    margin: -30px auto;
+    margin-bottom: -50px;
+    height: auto;
+    min-height: 300px;
+    width: 300px;
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.nutrition-info {
+    background-color: #070708;
+    padding: 3px;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+}
+
+.nutrition-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.nutrition-item strong {
+    color: #3ca545;
+    font-weight: bold;
+}
+
+.card-meal-type {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-size: 31px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.card-body {
+    font-size: 1.25rem;
+}
+
+.card-details {
+    margin-top: 15px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.card-price {
+    width: 150px;
+    height: 60px;
+    margin-left: 270px;
+    margin-top: 25px;
+    font-size: 25px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .card-body{
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        
+    }
+    .card-image {
+        width: 100%;
+    }
+
+    .card-text {
+        width: 90%;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .nutrition-info {
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* Add this to your existing CSS */
+
+.card {
+    /* Your existing card styles */
+    transition: transform 0.3s ease-in-out;
+    /* Add perspective for smoother transform */
+    perspective: 1000px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+
+/* Make the shadow transition smooth */
+.card > div {
+    /* Your existing box-shadow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover > div {
+    box-shadow: 0 20px 25px 0 rgba(1, 12, 5, 0.6);
+}
